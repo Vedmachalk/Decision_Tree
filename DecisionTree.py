@@ -83,7 +83,7 @@ class DecisionTree:
             if len(feature_vector) <= 3: # Stop if we have <= 3
                 continue
 
-            # if we have feature like these we stop ? cause we can not make a decision
+            # if we have feature like these we stop, cause we can not make a decision
             if feature_type == "categorical" and np.all(ratio_items[:, 1] == ratio_items[0, 1]):
                 continue
 
